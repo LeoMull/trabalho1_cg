@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="obj_list">
+        Lista de Objetos:
+        <div id="obj_list_cont">
+        </div>
+    </div>
+
+    <div id="canvas_cont">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="btns">
+        <canvas class = "btn" id = "op0"></canvas>
+        <canvas class = "btn" id = "op1"></canvas>
+        <canvas class = "btn" id = "op2"></canvas>
+        <canvas class = "btn" id = "op3"></canvas>
+        <canvas class = "btn" id = "op4"></canvas>
+    </div>
+
+    <div id="sliders" class="object-controls" data-index="0">
+        <label>Translate X: <input type="range" id="translateX" min="-5" max="5" step="0.1" value="0"></label>
+        <label>Translate Y: <input type="range" id="translateY" min="-5" max="5" step="0.1" value="0"></label>
+        <label>Translate Z: <input type="range" id="translateZ" min="-5" max="5" step="0.1" value="0"></label>
+        <label>Rotate X: <input type="range"    id="rotateX" min="0" max="360" step="0.1" value="0"></label>
+        <label>Rotate Y: <input type="range"    id="rotateY" min="0" max="360" step="0.1" value="0"></label>
+        <label>Rotate Z: <input type="range"    id="rotateZ" min="0" max="360" step="0.1" value="0"></label>
+        <label>Scale: <input type="range"     id="scaleX" min="0.1" max="2" step="0.1" value="1"></label>
+        
+    </div>
+    <div>
+        <div id="del">DELETE</div>
+        <div id="chg_textu">Change Texture</div>
+        <input type="file" id="jsonInput">        
+    </div>
+
+
+    <script src="https://webgl2fundamentals.org/webgl/resources/twgl-full.min.js"></script>
+    
+    <script src="https://webgl2fundamentals.org/webgl/resources/m4.js"></script>
+    <script src="https://webgl2fundamentals.org/webgl/resources/m3.js"></script>
+    <script src="https://webgl2fundamentals.org/webgl/resources/twgl-full.min.js"></script>
+
+    <script src="main4.js"></script>
+</body>
+</html>

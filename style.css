@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#canvas {
+    height: 80vh;
+    width: 77vw;
+}
+
+.btn {
+    height: 18vh;
+    width: 10vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 10, 0.8);
+}
+
+#del {
+    background-color: red;
+    color: white;
+}
+
+#del:hover {
+    background-color: darkred;
+}
+
+body {
+    background-color: gainsboro;
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 10vw, 75vw, 10vw;
+    grid-template-rows: 5fr, 1fr;
+}
+
+#obj_list {
+    background-color: black;
+    grid-row: 1;
+    grid-column: 1;
+    color: white;
+}
+
+#canva_cont {
+
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#btns {
+    background-color: red;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#sliders {
+    background-color: gainsboro;
+    grid-row: 2;
+    grid-column: 1/4;
+}
+#chg_textu{
+    background-color: gainsboro;
+}
+#chg_textu:hover{
+    background-color: gray;
+}
